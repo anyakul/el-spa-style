@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -412,12 +412,12 @@
               <legend class="your-project__form-group-legend">3. Оборудование</legend>
               <ul class="your-project__form-group-list">
                 <li class="your-project__form-group-item">
-                  <input class="visually-hidden your-project__form-group-item-radio" type="radio" id="yes" value="yes" checked="">
-                  <label class="your-project__form-group-item-label" for="yes">Да</label>
+                  <input class="visually-hidden your-project__form-group-item-radio" type="radio" id="equipment-yes" value="equipment-yes" checked="">
+                  <label class="your-project__form-group-item-label" for="equipment-yes">Да</label>
                 </li>
                 <li class="your-project__form-group-item">
-                  <input class="visually-hidden your-project__form-group-item-radio" type="radio" id="no" value="no">
-                  <label class="your-project__form-group-item-label" for="no">Нет</label>
+                  <input class="visually-hidden your-project__form-group-item-radio" type="radio" id="equipment-no" value="equipment-no">
+                  <label class="your-project__form-group-item-label" for="equipment-no">Нет</label>
                 </li>
               </ul>
             </fieldset>
@@ -425,16 +425,16 @@
               <legend class="your-project__form-group-legend">4.Задайте размер</legend>
               <ul class="your-project__form-group-list">
                 <li class="your-project__form-group-item your-project__form-group-item--size">
-                  <label class="your-project__form-group-item-label" for="long-a">Длина a, <span>см</span></label>
-                  <input class="your-project__form-group-item-input" type="number" id="long-a" value="long-a">
+                  <label class="your-project__form-group-item-label" for="longa">Длина a, <span>см</span></label>
+                  <input class="your-project__form-group-item-input" type="number" id="long-a">
                 </li>
                 <li class="your-project__form-group-item your-project__form-group-item--size">
                   <label class="your-project__form-group-item-label" for="long-b">Ширина b, <span>см</span></label>
-                  <input class="your-project__form-group-item-input" type="number" id="long-a" value="long-a">
+                  <input class="your-project__form-group-item-input" type="number" id="long-b">
                 </li>
                 <li class="your-project__form-group-item your-project__form-group-item--size">
                   <label class="your-project__form-group-item-label" for="long-c">Высота с, <span>см</span></label>
-                  <input class="your-project__form-group-item-input" type="number" id="long-a" value="long-a">
+                  <input class="your-project__form-group-item-input" type="number" id="long-c">
                 </li>
               </ul>
             </fieldset>
@@ -621,29 +621,108 @@
     </div>
     <div class="question">
       <div class="question__wrapper">
-        <div class="question__sub-header">Остались вопросы?</div>
-        <div class="question__header">Задайте их нашему специалисту</div>
-        <form class="question__form">
-          <ul class="question__form-list">
-            <li class="question__form-item">
-              <input class="question__form-item-input" type="text" placeholder="Ваше имя">
-            </li>
-            <li class="question__form-item">
-              <input class="question__form-item-input" type="tel" placeholder="Номер телефона">
-            </li>
-            <li class="question__form-item">
-              <input class="question__form-item-input" type="file" placeholder="Загрузить файл">
-            </li>
-          </ul>
-          <button class="question__form-button">Отправить</button>
-        </form>
-        <p class="question__text">Нажимая на кнопку “Отправить” Вы даете согласие 
-        на обработку персональных данных в соответствии с Политикой 
-        конфиденциальности</p>
+        <div class="question__container">
+          <div class="question__header">Остались вопросы?</div>
+          <div class="question__header-add">Задайте их нашему специалисту</div>
+          <form class="question__form">
+            <ul class="question__form-list">
+              <li class="question__form-item">
+                <input class="question__form-item-input" type="text" placeholder="Ваше имя">
+              </li>
+              <li class="question__form-item">
+                <input class="question__form-item-input" type="tel" placeholder="Номер телефона">
+              </li>
+              <li class="question__form-item question__form-item--file">
+                <label class="question__form-item-label" for="files">Загрузить файл</label>
+                <input class="question__form-item-input visually-hidden" type="file">
+              </li>
+            </ul>
+            <button class="question__form-button">Отправить</button>
+          </form>
+          <p class="question__text">Нажимая на кнопку “Отправить” Вы даете согласие 
+          на обработку персональных данных в соответствии с Политикой 
+          конфиденциальности</p>
+        </div>
       </div>
     </div>
   </main>
   <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__logo-copyright">
+        <a class="footer__logo-link" href="#">
+          <img class="header__logo-image" src="img/logo.png" width="280" height="72" alt="logo">
+        </a>
+        <p class="footer__email-years">@legkyi-par.ru 2006-2020</p>
+        <p class="footer__copyright">Все права защищены</p>
+        <a class="footer__privacy" href="#">Политика конфидентальности<p></p>
+      </a></div>
+      <div class="footer__menu">
+        <div class="footer__menu-header">Компания</div>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a href="#">О нас</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu">
+        <div class="footer__menu-header">Строительство</div>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a href="#">Сауны</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Хамамы</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Бани</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Бассейны</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">SPA зоны</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu">
+        <div class="footer__menu-header">Каталог товаров</div>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a href="#">Автономная канализация</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Аксессуары для бассейнов</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Аксессуары для саун</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Бондарные изделия</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Гидромассажные бассейны</a>
+          </li>
+          <li class="footer__menu-item">
+            <a href="#">Дровяные печи для бань</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__menu">
+        <div class="footer__menu-header">Мы в социальных сетях</div>
+        <ul class="footer__menu-list">
+          <li class="footer__menu-item">
+            <a href="#">
+              <svg width="29" height="30">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </body>
 </html>

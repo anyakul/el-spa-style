@@ -7,11 +7,12 @@
 }
 
 .advantages__line {
-  @include page-width;
+  width: 95%;
   @include flex-row;
-  margin-left: 40px;
   space-between: justify-content;
+  margin: auto;
   margin-bottom: 110px;
+  align-items: flex-start;
 }
 
 .advantages__experience {
@@ -78,6 +79,7 @@
   width: 40%;
   font-size: 16px;
   line-height: 25px;
+  display: block;
 }
 
 .advantages__header-blue {
@@ -87,7 +89,7 @@
 .advantages__list {
   @include cancel-list;
   @include flex-row;
-  padding-left: 4%;
+  padding-left: 2%;
 }
 
 .advantages__item {

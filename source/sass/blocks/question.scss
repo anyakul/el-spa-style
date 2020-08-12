@@ -1,15 +1,88 @@
 .question {
   @include margin-from-section;
     background-image: url("../img/background-question.jpg");
-    position: relative;
-    
-    &:after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      hiight: 100%;
+    position: relative;z-index: 4;
+    background-color: rgba(0, 0, 0, 0.6);
+  color: $white-color;
+}
+
+.question__wrapper {
       background-color: rgba(0, 0, 0, 0.6);
-      left: 0;
-      top: 0;
-    }
+}
+
+.question__wrapper {
+      background-color: rgba(0, 0, 0, 0.6);
+    padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.question__container {
+  @include page-width;
+}
+
+.question__header,
+.question__header-add {
+  @include section-header-question;
+}
+
+
+.question__header-add {
+  @include section-header-question;
+  margin-bottom: 30px;
+}
+
+.question__form {
+  @include flex-row;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.question__form-list {
+  @include flex-row;
+  @include cancel-list;
+  width: 85%;
+  align-items: flex-start;
+}
+
+.question__form-item {
+  width: 300px;
+  margin-right: 40px;
+  border-bottom: 1px solid $white-color;
+  
+  &--file {
+    border-bottom: 1px solid $white-color;
+  }
+}
+
+.question__form-item-input {
+  font-size: 18px;
+  line-height: 18px;
+  padding-left: 5px;
+  background-color: transparent;
+  border: none;
+  font-family: $roboto-thin;
+  color: $white-color;
+  
+  &::placeholder {
+    color: $white-color;
+  padding-left: 2%;
+  }
+}
+
+.question__form-item-label {
+  font-family: $roboto-thin;
+  color: $white-color;
+}
+
+.question__form-button {
+  @include form-group-text;
+  color: $white-color;
+  border: 1px solid $white-color;
+  background-color: transparent;
+  padding: 15px 45px;
+  margin-top: -10px;
+}
+
+.question__text {
+  @include form-text;
 }

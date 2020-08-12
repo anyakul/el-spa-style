@@ -1,0 +1,43 @@
+.footer {
+  background-color: $light-main-grey-color;
+  padding-top: 25px;
+  padding-bottom: 60px;
+}
+
+.footer__wrapper {
+  @include page-width;
+  @include flex-row;
+}
+
+.footer__logo-link {
+  margin-bottom: 70px;
+  display: block;
+}
+
+.footer__email-years,
+.footer__copyright,
+.footer__privacy {
+  @include footer-links;
+}
+
+.footer__menu-header {
+  @include item-header;
+  color: $blue-color;
+  margin-bottom: 17px;
+}
+
+.footer__menu-list {
+  @include cancel-list;
+}
+
+.footer__menu-item {
+  @include cancel-list;
+  margin-bottom: 5px;
+  a {
+    @include footer-links;
+  }
+
+  svg {
+    color: $blue-color;
+  }
+}
