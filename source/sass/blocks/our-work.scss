@@ -1,0 +1,33 @@
+.our-work {
+  @include margin-from-section;
+}
+
+.our-work__wrapper {
+  @include page-width;
+}
+
+.our-work__header {
+  @include section-header;
+}
+
+.our-work__text {
+  @include section-text;
+  margin-bottom: 30px;
+}
+
+.our-work__list {
+  @include cancel-list;
+  @include flex-row;
+}
+
+
+.our-work__item-image {
+  margin: 0 auto;
+}
+
+
+.our-work__item {
+  @include list-item-with-svg;
+  text-align: center;
+  @include page-width;
+}

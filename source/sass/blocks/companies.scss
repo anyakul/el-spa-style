@@ -1,0 +1,14 @@
+.companies {
+  @include margin-from-section;
+}
+
+.companies__wrapper {
+  @include page-width;
+}
+
+.companies__list {
+  @include cancel-list;
+  @include flex-row-space-wrap;
+  align-items: center;
+  @include page-width;
+}

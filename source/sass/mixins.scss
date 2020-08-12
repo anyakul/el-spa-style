@@ -1,0 +1,130 @@
+@mixin page-width {
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin flex-row-space-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@mixin margin-from-section {
+  margin-bottom: 90px;
+}
+
+@mixin section-header {
+  font-size: 38px;
+  font-family: roboto-light;
+  line-height: 45px;
+  margin-bottom: 10px;
+  
+  span {
+    color: $blue-color;
+  }
+}
+
+@mixin form-group-text {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  font-family: roboto-thin;
+}
+
+
+@mixin section-text {
+  font-size: 18px;
+  line-height: 22px;
+  font-family: $roboto-thin;
+}
+
+@mixin item-header {
+  font-size: 18px;
+  line-height: 22px;
+  
+  span {
+    font-family: $roboto-bold;
+  }
+}
+
+@mixin item-header-choose {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+@mixin item-text-choose {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin item-text {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+@mixin text-in-photo {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+}
+
+@mixin blue-button {
+  color: $white-color;
+  font-size: 24px;
+  line-height: 22px;
+  background-color: $blue-color;
+  text-decoration: none;
+  border: none;
+  
+  svg {
+    color: $white-color;
+  }
+}
+
+@mixin blue-button-in-form {
+  color: $white-color;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: $blue-color;
+  text-decoration: none;
+  border: none;
+}
+
+@mixin form-text {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $roboto-light;
+}
+
+@mixin list-item-with-svg {
+  font-size: 16px;
+  line-height: 25px;
+  font-family: $roboto-light;
+}
+
+@mixin cancel-list {
+  list-style: none;
+}
+
+@mixin dark-element {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease-out;
+  }
+}

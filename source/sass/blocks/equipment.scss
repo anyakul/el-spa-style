@@ -1,0 +1,93 @@
+.equipment {
+  @include margin-from-section;
+}
+
+.equipment__wrapper {
+  @include page-width;
+}
+
+.equipment__header {
+  @include section-header;
+}
+
+.equipment__text {
+  @include section-text;
+  width: 79%;
+}
+
+.equipment__list {
+  @include cancel-list;
+  @include flex-row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.equipment__item {
+    @include dark-element;
+  position: relative;
+    overflow: hidden;
+  margin-bottom: 20px;
+  width: 49%;
+  
+  &:nth-child(2n-1) {
+  margin-top: -14%;
+    
+    &:before {
+      height: 99%;
+    }
+  .services__item-text {
+    @include text-in-photo;
+    bottom: 36%;
+  }
+  }
+  
+  &--button {
+      margin-left: 0;
+      margin-right: -6%;
+  width: 55%;
+  @include flex-row;
+    a {
+    @include blue-button;
+    @include flex-row;
+  justify-content: space-between;
+      padding: 55px 150px 55px 55px;
+      width: 100%;
+    }
+  }
+  
+  &:first-child,
+  &:last-child  {
+  margin-top: auto;
+    &:before {
+      display: none;
+    }
+  }
+  
+  &:first-child  {
+    margin-top: 0;
+  width: 50%;
+  }
+}
+
+
+.equipment__item-image {
+  width: 100%;
+}
+
+.equipment__item-text {
+  @include text-in-photo;
+    z-index: 20;
+    color: $white-color;
+    width: 51%;
+    padding-left: 25px;
+}
+
+.equipment__item-header {
+  @include item-header;
+  margin-bottom: 10px;
+}
+
+.equipment__item-text-item {
+  @include item-text;
+}

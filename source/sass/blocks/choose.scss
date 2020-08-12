@@ -1,0 +1,70 @@
+.choose {
+  @include margin-from-section;
+}
+
+.choose__wrapper {
+  @include page-width;
+}
+
+.choose__header {
+  @include section-header;
+}
+
+.choose__text {
+  @include section-text;
+  width: 47%;
+  margin-bottom: 25px;
+}
+
+.choose__list {
+  @include cancel-list;
+  @include flex-row;
+  justify-content: space-between;
+}
+
+.choose__item {
+  max-width: 32%;
+  position: relative;
+}
+
+.choose__item-image {
+  width: 100%;
+  height: 100%;
+}
+
+.choose__item-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: $white-color;
+  background-color: rgba(0, 0, 0, 0.45);
+  padding-left: 10%;
+  width: 90%;
+  padding-top: 10px;
+}
+
+.choose__item-header {
+  @include item-header-choose;
+  margin-bottom: 10px;
+  position: relative;
+  
+  &:before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: $white-color;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -35px;
+    margin: auto;
+    z-index: 10;
+  }
+}
+
+.choose__item-text-item {
+  @include item-text-choose;
+  mix-blend-mode: normal;
+  margin-bottom: 25px;
+  font-family: $roboto-thin;
+}

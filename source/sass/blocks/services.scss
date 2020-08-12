@@ -1,0 +1,97 @@
+.services {
+  @include margin-from-section;
+}
+
+.services__wrapper {
+  @include page-width;
+}
+
+.services__header {
+  @include section-header;
+}
+
+.services__text {
+  @include section-text;
+  margin-bottom: 30px;
+  width: 90%;
+}
+
+.services__list {
+  @include flex-row;
+  @include cancel-list;
+  flex-wrap: wrap;
+}
+
+.services__item {
+    @include dark-element;
+  position: relative;
+    overflow: hidden;
+  margin-bottom: 20px;
+  width: 49%;
+  
+  &:nth-child(2n-1) {
+  margin-top: -14%;
+    
+    &:before {
+      height: 66%;
+    }
+  .services__item-text {
+    @include text-in-photo;
+    bottom: 36%;
+  }
+  }
+  
+  &--button {
+      margin-left: -6%;
+  width: 55%;
+  @include flex-row;
+    a {
+    @include blue-button;
+    @include flex-row;
+  justify-content: space-between;
+      padding: 55px 95px 55px 150px;
+      width: 100%;
+    }
+    
+    span {
+      margin-left: auto;
+    }
+  }
+  
+  &:first-child,
+  &:last-child  {
+    &:before {
+      display: none;
+    }
+  }
+  &:last-child  {
+      margin-top: -12%;
+  }
+  
+  &:first-child  {
+    margin-top: 0;
+  width: 50%;
+  }
+}
+
+
+.services__item-image {
+  width: 100%;
+}
+
+.services__item-text {
+  @include text-in-photo;
+    z-index: 20;
+    color: $white-color;
+    width: 54%;
+    padding-left: 25px;
+}
+
+.services__item-header {
+  @include item-header;
+  margin-bottom: 10px;
+}
+
+.services__item-text-item {
+  @include item-text;
+}

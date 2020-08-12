@@ -1,0 +1,69 @@
+.header {
+  @include margin-from-section;
+    background-image: url("../img/background-promo.jpg");
+    background-size: cover;
+    padding-bottom: 80px;
+}
+.header__contacts {
+  color: $white-color;
+    position: relative;
+    font-size: 13px;
+    line-height: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 12px;
+    align-items: center;
+    
+    
+}
+.header__contacts-wrapper {
+  @include page-width;
+  @include flex-row;
+}
+.header__contacts-item {
+  margin-right: 40px;
+  margin-bottom: 0;
+  
+  &:last-child {
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+.header__wrapper {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header__logo-menu-promo {
+  @include page-width;
+}
+
+.header__logo-menu {
+  @include flex-row;
+  align-items: center;
+  margin-bottom: 310px;
+}
+
+.header__logo-link {
+  margin-right: auto;
+}
+
+.header__promo {
+  color: $white-color;
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.header__promo-header {
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: uppercase;
+  font-family: $roboto-bold;
+  margin-bottom: 10px;
+}
+
+.header__promo-text {
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: capitalize;
+  width: 80%;
+}

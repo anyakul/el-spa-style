@@ -1,0 +1,15 @@
+.question {
+  @include margin-from-section;
+    background-image: url("../img/background-question.jpg");
+    position: relative;
+    
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      hiight: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      left: 0;
+      top: 0;
+    }
+}
