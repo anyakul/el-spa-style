@@ -247,21 +247,51 @@
     <div class="photos">
       <ul class="photos__list">
         <li class="photos__item">
-          <img class="photos__item-image" src="img/bathroom.png" alt="photo">
-       </li>
-        <li class="photos__item">
-          <img class="photos__item-image" src="img/hammam1.png" alt="photo">
+          <a href="#">
+            <img class="photos__item-image" src="img/bathroom.png" alt="photo">
+            <div class="photos__item-link" href="#">
+              <span class="photos__item-link-span">Хамам</span>
+              <p class="photos__item-link-header">Восточная сказка</p>
+            </div>
+          </a>
         </li>
         <li class="photos__item">
-          <img class="photos__item-image" src="img/hammam2.png" alt="photo">
+          <a href="#">
+            <img class="photos__item-image" src="img/hammam1.png" alt="photo">
+            <div class="photos__item-link" href="#">
+              <span class="photos__item-link-span">Хамам</span>
+              <p class="photos__item-link-header">Восточная сказка</p>
+            </div>
+          </a>
         </li>
         <li class="photos__item">
-          <img class="photos__item-image" src="img/hammam3.png" alt="photo">
+          <a href="#">
+            <img class="photos__item-image" src="img/hammam2.png" alt="photo">
+            <div class="photos__item-link" href="#">
+              <span class="photos__item-link-span">Хамам</span>
+              <p class="photos__item-link-header">Восточная сказка</p>
+            </div>
+          </a>
         </li>
         <li class="photos__item">
-          <img class="photos__item-image" src="img/hammam4.png" alt="photo">
+          <a href="#">
+            <img class="photos__item-image" src="img/hammam3.png" alt="photo">
+            <div class="photos__item-link" href="#">
+              <span class="photos__item-link-span">Хамам</span>
+              <p class="photos__item-link-header">Восточная сказка</p>
+            </div>
+          </a>
         </li>
-        <li class="photos__item photos__item--with-link">
+        <li class="photos__item">
+          <a href="#">
+            <img class="photos__item-image" src="img/hammam4.png" alt="photo">
+            <div class="photos__item-link" href="#">
+              <span class="photos__item-link-span">Хамам</span>
+              <p class="photos__item-link-header">Восточная сказка</p>
+            </div>
+          </a>
+        </li>
+        <li class="photos__item">
           <a href="#">
             <img class="photos__item-image" src="img/hammam5.png" alt="photo">
             <div class="photos__item-link" href="#">
@@ -379,20 +409,20 @@
               <legend class="your-project__form-group-legend">1. Выберите проект</legend>
               <ul class="your-project__form-group-list">
                 <li class="your-project__form-group-item">
-                  <input class="visually-hidden your-project__form-group-item-radio" type="radio" id="hamam" value="hamam" checked="">
-                  <label class="your-project__form-group-item-label" for="hamam">Хамам</label>
+                  <input class="visually-hidden your-project__form-group-item-radio" type="radio" name="project" id="hammam" value="hammam" checked="">
+                  <label class="your-project__form-group-item-label your-project__form-group-item-label--radio" for="hammam">Хамам</label>
                 </li>
                 <li class="your-project__form-group-item">
-                  <input class="visually-hidden your-project__form-group-item-radio" type="radio" id="bathhouse" value="bathhouse">
-                  <label class="your-project__form-group-item-label" for="bathhouse">Баня</label>
+                  <input class="visually-hidden your-project__form-group-item-radio" type="radio" name="project" id="bathhouse" value="bathhouse">
+                  <label class="your-project__form-group-item-label your-project__form-group-item-label--radio" for="bathhouse">Баня</label>
                 </li>
                 <li class="your-project__form-group-item">
-                  <input class="visually-hidden your-project__form-group-item-radio" type="radio" id="sauna" value="sauna">
-                  <label class="your-project__form-group-item-label" for="sauna">Сауна</label>
+                  <input class="visually-hidden your-project__form-group-item-radio" type="radio" name="project" id="sauna" value="sauna">
+                  <label class="your-project__form-group-item-label your-project__form-group-item-label--radio" for="sauna">Сауна</label>
                 </li>
                 <li class="your-project__form-group-item">
-                  <input class="visually-hidden your-project__form-group-item-radio" type="radio" id="spa" value="spa">
-                  <label class="your-project__form-group-item-label" for="spa">SPA</label>
+                  <input class="visually-hidden your-project__form-group-item-radio" type="radio" name="project" id="spa" value="spa">
+                  <label class="your-project__form-group-item-label your-project__form-group-item-label--radio" for="spa">SPA</label>
                 </li>
               </ul>
             </fieldset>
@@ -400,12 +430,12 @@
               <legend class="your-project__form-group-legend">2. Отделка</legend>
               <ul class="your-project__form-group-list">
                 <li class="your-project__form-group-item">
-                  <input class="visually-hidden your-project__form-group-item-radio" type="radio" id="yes" value="yes" checked="">
-                  <label class="your-project__form-group-item-label" for="yes">Да</label>
+                  <input class="visually-hidden your-project__form-group-item-radio" type="radio" name="decoration" id="yes" checked="">
+                  <label class="your-project__form-group-item-label your-project__form-group-item-label--radio" for="yes">Да</label>
                 </li>
                 <li class="your-project__form-group-item">
-                  <input class="visually-hidden your-project__form-group-item-radio" type="radio" id="no" value="no">
-                  <label class="your-project__form-group-item-label" for="no">Нет</label>
+                  <input class="visually-hidden your-project__form-group-item-radio" type="radio" name="decoration" id="no">
+                  <label class="your-project__form-group-item-label your-project__form-group-item-label--radio" for="no">Нет</label>
                 </li>
               </ul>
             </fieldset>
@@ -413,12 +443,12 @@
               <legend class="your-project__form-group-legend">3. Оборудование</legend>
               <ul class="your-project__form-group-list">
                 <li class="your-project__form-group-item">
-                  <input class="visually-hidden your-project__form-group-item-radio" type="radio" id="equipment-yes" value="equipment-yes" checked="">
-                  <label class="your-project__form-group-item-label" for="equipment-yes">Да</label>
+                  <input class="visually-hidden your-project__form-group-item-radio" type="radio" name="equipment" id="equipment-yes" value="equipment-yes" checked="">
+                  <label class="your-project__form-group-item-label your-project__form-group-item-label--radio" for="equipment-yes">Да</label>
                 </li>
                 <li class="your-project__form-group-item">
-                  <input class="visually-hidden your-project__form-group-item-radio" type="radio" id="equipment-no" value="equipment-no">
-                  <label class="your-project__form-group-item-label" for="equipment-no">Нет</label>
+                  <input class="visually-hidden your-project__form-group-item-radio" type="radio" name="equipment" id="equipment-no" value="equipment-no">
+                  <label class="your-project__form-group-item-label your-project__form-group-item-label--radio" for="equipment-no">Нет</label>
                 </li>
               </ul>
             </fieldset>
@@ -642,8 +672,8 @@
                 <input class="question__form-item-input" type="tel" placeholder="Номер телефона">
               </li>
               <li class="question__form-item question__form-item--file">
-                <label class="question__form-item-label" for="files">Загрузить файл</label>
-                <input class="question__form-item-input visually-hidden" type="file">
+                <input class="question__form-item-input question__form-item-input--file" type="file">
+                <label class="question__form-item-label question__form-item-label--file" for="files">Загрузить файл</label>
               </li>
             </ul>
             <button class="question__form-button" type="submit">Отправить</button>
