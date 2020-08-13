@@ -48,7 +48,7 @@
   width: 300px;
   margin-right: 40px;
   border-bottom: 1px solid $white-color;
-  
+
   &--file {
     border-bottom: 1px solid $white-color;
   }
@@ -62,7 +62,8 @@
   border: none;
   font-family: $roboto-thin;
   color: $white-color;
-  
+  width: 300px;
+
   &::placeholder {
     color: $white-color;
   padding-left: 2%;
@@ -81,7 +82,7 @@
   background-color: transparent;
   padding: 15px 45px;
   margin-top: -10px;
-  
+
   &:hover,
   &:focus,
   &:active {

@@ -1237,7 +1237,8 @@ body {
   background-color: transparent;
   border: none;
   font-family: "Roboto-thin", "Arial", sans-serif;
-  color: #ffffff; }
+  color: #ffffff;
+  width: 300px; }
   .question__form-item-input::-webkit-input-placeholder {
     color: #ffffff;
     padding-left: 2%; }
