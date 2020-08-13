@@ -38,9 +38,17 @@
   bottom: 0;
   color: $white-color;
   background-color: rgba(0, 0, 0, 0.45);
-  padding-left: 10%;
-  width: 90%;
+  padding-left: 12%;
+  width: 88%;
   padding-top: 10px;
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.5s ease;
+
+  &:hover {
+    top: 0;
+  }
 }
 
 .choose__item-header {
@@ -56,7 +64,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: -35px;
+    left: -37px;
     margin: auto;
     z-index: 10;
   }

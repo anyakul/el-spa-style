@@ -27,6 +27,10 @@
     margin-right: 0;
     margin-left: auto;
   }
+  
+  svg {
+    color: $white-color;
+  }
 }
 
 .header__wrapper {
@@ -45,6 +49,7 @@
 
 .header__logo-link {
   margin-right: auto;
+  padding-bottom: 25px;
 }
 
 .header__promo {

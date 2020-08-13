@@ -13,31 +13,32 @@
   position: relative;
   overflow: hidden;
   height: auto;
+  box-sizing: border-box;
+  
   
   &--with-link {
-    &:before {
-      content: "";
-      position: absolute;
-      width: 100%;
+    a {
       height: 100%;
-      top: 0;
-      left: 0;
-      z-index: 3;
-      background: rgba(0, 0, 0, 0.6);
-     transition: all 0.5s ease-out;
+      width: 100%;
+      display: block;
+      @include dark-element;
+      
+      &:before {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
     }
       
-      &:hover {  .photos__item-image {
-        width: 100%;
-
-          display: block;
-     transition: all 0.5s ease;
-          
-          &:hover {
-            transform: scale(1.22);
-          }
-        }
+    .photos__item-image {
+      width: 100%;
+      display: block;
+      transition: all 0.5s ease;
+    }
+        
+    &:hover {
+      .photos__item-image {      
+        transform: scale(1.22);
       }
+    }
   }
 }
 
@@ -71,8 +72,8 @@
     width: 110px;
     height: 2px;
     position: absolute;
-    bottom: -2px;
-    color: $white-color;
+    bottom: -5px;
+    background-color: $white-color;
     opacity: 1;
     z-index: 10;
     left: 0;

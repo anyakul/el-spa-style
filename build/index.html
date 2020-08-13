@@ -2,7 +2,6 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Эль спа стайл</title>
   <link rel="stylesheet" href="css/style.css">
@@ -14,7 +13,7 @@
         <p class="header__contacts-item">Москва, Армянский переулок, 9</p>
         <p class="header__contacts-item">+7 (910) 436-88-88</p>
         <p class="header__contacts-item">с 9:00 до 18:00</p>
-        <a class="header__contacts-item">
+        <a class="header__contacts-item" href="#">
           <svg width="29" height="30">
             <use xlink:href="img/sprite.svg#instagram"></use>
           </svg>
@@ -263,10 +262,12 @@
           <img class="photos__item-image" src="img/hammam4.png" alt="photo">
         </li>
         <li class="photos__item photos__item--with-link">
-          <img class="photos__item-image" src="img/hammam5.png" alt="photo">
-          <a class="photos__item-link" href="#">
-            <span class="photos__item-link-span">Хамам</span>
-            <p class="photos__item-link-header">Восточная сказка</p>
+          <a href="#">
+            <img class="photos__item-image" src="img/hammam5.png" alt="photo">
+            <div class="photos__item-link" href="#">
+              <span class="photos__item-link-span">Хамам</span>
+              <p class="photos__item-link-header">Восточная сказка</p>
+            </div>
           </a>
         </li>
       </ul>
@@ -515,27 +516,27 @@
         <ul class="choose__list">
           <li class="choose__item">
             <img class="choose__item-image" src="img/hammam5.png" alt="Хамам">
-            <div class="choose__item-text">
+            <a class="choose__item-text" href="#">
               <p class="choose__item-header">Хамам</p>
               <p class="choose__item-text-item">Турецкая баня является 
               отличным местом для отдыха и расслабления. Пребывание в хаммаме не
               вызывает дискомфорта у человека, так как там поддерживается
               сравнительно невысокая температура.</p>
-            </div>            
+            </a>            
           </li>
           <li class="choose__item">
             <img class="choose__item-image" src="img/sauna.png" alt="Сауна">
-            <div class="choose__item-text">
+            <a class="choose__item-text" href="#">
               <p class="choose__item-header">Сауна</p>
               <p class="choose__item-text-item">Финская баня — небольшое помещение.</p>
-            </div>            
+            </a>            
           </li>
           <li class="choose__item">
             <img class="choose__item-image" src="img/bathhouse.png" alt="Баня">
-            <div class="choose__item-text">
+            <a class="choose__item-text" href="#">
               <p class="choose__item-header">Баня</p>
               <p class="choose__item-text-item">Помещение, оборудованное для теплого</p>
-            </div>            
+            </a>            
           </li>
         </ul>
       </div>
@@ -552,40 +553,48 @@
               современного оборудования для саун, бассейнов, хамамов.</p>
           </li>
           <li class="equipment__item">
-            <img class="equipment__item-image" src="img/hammam7.png" alt="Оборудование для хамамов">
-            <div class="equipment__item-text">
-              <p class="equipment__item-header">Оборудование для Хамамов</p>
-              <p class="equipment__item-text-item">Если вы предпочитаете выполнить
-              работы по отделке хамама мозаикой или мрамором самостоятельно, то мы
-              можем предложить работы по устройству теплоизоляционного каркаса.</p>
-            </div>            
+            <a href="#">
+              <img class="equipment__item-image" src="img/hammam7.png" alt="Оборудование для хамамов">
+              <div class="equipment__item-text">
+                <p class="equipment__item-header">Оборудование для Хамамов</p>
+                <p class="equipment__item-text-item">Если вы предпочитаете выполнить
+                работы по отделке хамама мозаикой или мрамором самостоятельно, то мы
+                можем предложить работы по устройству теплоизоляционного каркаса.</p>
+              </div>
+            </a>
           </li>
           <li class="equipment__item">
-            <img class="equipment__item-image" src="img/bathhouse1.png" alt="Оборудование для Бань">
-            <div class="equipment__item-text">
-              <p class="equipment__item-header">Оборудование для Бань</p>
-              <p class="equipment__item-text-item">Если вы предпочитаете выполнить
-              работы по отделке хамама мозаикой или мрамором самостоятельно, то мы
-              можем предложить работы по устройству теплоизоляционного каркаса.</p>
-            </div>            
+            <a href="#">
+              <img class="equipment__item-image" src="img/bathhouse1.png" alt="Оборудование для Бань">
+              <div class="equipment__item-text">
+                <p class="equipment__item-header">Оборудование для Бань</p>
+                <p class="equipment__item-text-item">Если вы предпочитаете выполнить
+                работы по отделке хамама мозаикой или мрамором самостоятельно, то мы
+                можем предложить работы по устройству теплоизоляционного каркаса.</p>
+              </div>
+            </a>              
           </li>
           <li class="equipment__item">
-            <img class="equipment__item-image" src="img/sauna1.png" alt="Оборудование для саун">
-            <div class="equipment__item-text">
-              <p class="equipment__item-header">Оборудование для Саун</p>
-              <p class="equipment__item-text-item">Если вы предпочитаете выполнить
-              работы по отделке хамама мозаикой или мрамором самостоятельно, то мы
-              можем предложить работы по устройству теплоизоляционного каркаса.</p>
-            </div>            
+            <a href="#">
+              <img class="equipment__item-image" src="img/sauna1.png" alt="Оборудование для саун">
+              <div class="equipment__item-text">
+                <p class="equipment__item-header">Оборудование для Саун</p>
+                <p class="equipment__item-text-item">Если вы предпочитаете выполнить
+                работы по отделке хамама мозаикой или мрамором самостоятельно, то мы
+                можем предложить работы по устройству теплоизоляционного каркаса.</p>
+              </div>
+            </a>    
           </li>
           <li class="equipment__item">
-            <img class="equipment__item-image" src="img/spa1.png" alt="Оборудование для спа">
-            <div class="equipment__item-text">
-              <p class="equipment__item-header">Оборудование для SPA</p>
-              <p class="equipment__item-text-item">Если вы предпочитаете выполнить
-              работы по отделке хамама мозаикой или мрамором самостоятельно, то мы
-              можем предложить работы по устройству теплоизоляционного каркаса.</p>
-            </div>            
+            <a href="#">
+              <img class="equipment__item-image" src="img/spa1.png" alt="Оборудование для спа">
+              <div class="equipment__item-text">
+                <p class="equipment__item-header">Оборудование для SPA</p>
+                <p class="equipment__item-text-item">Если вы предпочитаете выполнить
+                работы по отделке хамама мозаикой или мрамором самостоятельно, то мы
+                можем предложить работы по устройству теплоизоляционного каркаса.</p>
+              </div>
+            </a>           
           </li>
           <li class="equipment__item equipment__item--button">
             <a href="#">
@@ -713,7 +722,7 @@
       <div class="footer__menu">
         <div class="footer__menu-header">Мы в социальных сетях</div>
         <ul class="footer__menu-list">
-          <li class="footer__menu-item">
+          <li class="footer__menu-item footer__menu-item--social">
             <a href="#">
               <svg width="29" height="30">
                 <use xlink:href="img/sprite.svg#instagram"></use>

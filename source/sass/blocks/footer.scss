@@ -14,7 +14,7 @@
   display: block;
 }
 
-.footer__email-years,
+.footer__email-years, 
 .footer__copyright,
 .footer__privacy {
   @include footer-link;
@@ -35,9 +35,20 @@
   margin-bottom: 5px;
   a {
     @include footer-link;
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
+    }
   }
-
+  
   svg {
     color: $blue-color;
+    margin-left: auto;
+  }
+  
+  
+  &--social {
+    text-align: right;
   }
 }

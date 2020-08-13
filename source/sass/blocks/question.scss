@@ -81,6 +81,12 @@
   background-color: transparent;
   padding: 15px 45px;
   margin-top: -10px;
+  
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $white-color;
+  }
 }
 
 .question__text {

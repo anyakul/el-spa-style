@@ -17,63 +17,78 @@
 }
 
 .services__list {
-  @include flex-row;
   @include cancel-list;
+  @include flex-row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .services__item {
-    @include dark-element;
   position: relative;
     overflow: hidden;
   margin-bottom: 20px;
   width: 49%;
   
+  a {
+    display: block;
+    @include dark-element;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+  }
+  .services__item-image {
+      width: 100%;
+      display: block;
+    overflow: hidden;
+      transition: all 0.5s ease;
+    }
+        
+    &:hover {
+      .services__item-image {      
+        transform: scale(1.22);
+      }
+    }
+  
+  
   &:nth-child(2n-1) {
   margin-top: -14%;
-    
-    &:before {
-      height: 66%;
-    }
-  .services__item-text {
-    @include text-in-photo;
-    bottom: 36%;
-  }
   }
   
   &--button {
-      margin-left: -9%;
-  width: 58%;
+      margin-left: -8%;
+  width: 57%;
   @include flex-row;
     a {
     @include blue-button;
     @include flex-row;
   justify-content: space-between;
-      padding: 55px 95px 55px 150px;
+      padding: 55px 55px 55px 140px;
+      
       width: 100%;
+    &:hover {
+    svg {
+        transition: transform .2s ease-out;
+        transform: translate3d(-40px, 0, -40px);
+      }
     }
-    
-    span {
-      margin-left: auto;
     }
   }
   
   &:first-child,
-  &:last-child  {
+  &:last-child a  {
     &:before {
       display: none;
     }
   }
-  &:last-child  {
-      margin-top: -12%;
-  }
   
   &:first-child  {
     margin-top: 0;
-  width: 50%;
+  }
+  &:last-child  {
+    margin-top: -150px;
   }
 }
-
 
 .services__item-image {
   width: 100%;
@@ -83,7 +98,7 @@
   @include text-in-photo;
     z-index: 20;
     color: $white-color;
-    width: 54%;
+    width: 51%;
     padding-left: 25px;
 }
 
