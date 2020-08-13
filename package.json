@@ -1,7 +1,7 @@
 {
-  "name": "door-company",
+  "name": "El spa style",
   "version": "1.0.0",
-  "description": "Проект Door Company",
+  "description": "Проект El spa style",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
