@@ -48,9 +48,10 @@
   width: 300px;
   margin-right: 40px;
   border-bottom: 1px solid $white-color;
+  position: relative;
 
   &--file {
-    border-bottom: 1px solid $white-color;
+    margin-top: -5px;
   }
 }
 
@@ -63,16 +64,36 @@
   font-family: $roboto-thin;
   color: $white-color;
   width: 300px;
+    padding-left: 2%;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
 
   &::placeholder {
     color: $white-color;
-  padding-left: 2%;
+  }
+
+  &--file {
+    opacity: 0;
+    width: 300px;
+    display: block;
+    height: 100%;
   }
 }
 
 .question__form-item-label {
   font-family: $roboto-thin;
   color: $white-color;
+  z-index:20;
+
+  &--file {
+    position: absolute;
+    top: 0;
+    left: 2%;
+  }
 }
 
 .question__form-button {
@@ -87,6 +108,9 @@
   &:focus,
   &:active {
     background-color: $white-color;
+    color: $black-color;
+    outline: none;
+    cursor: pointer;
   }
 }
 

@@ -44,7 +44,7 @@
   display: block;
   overflow: hidden;
   text-decoration: none;
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-out;
 
   &:hover {
     top: 0;
@@ -55,7 +55,7 @@
   @include item-header-choose;
   margin-bottom: 10px;
   position: relative;
-  
+
   &:before {
     content: "";
     width: 30px;
