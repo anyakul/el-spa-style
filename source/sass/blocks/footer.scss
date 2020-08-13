@@ -17,7 +17,7 @@
 .footer__email-years,
 .footer__copyright,
 .footer__privacy {
-  @include footer-links;
+  @include footer-link;
 }
 
 .footer__menu-header {
@@ -34,7 +34,7 @@
   @include cancel-list;
   margin-bottom: 5px;
   a {
-    @include footer-links;
+    @include footer-link;
   }
 
   svg {
