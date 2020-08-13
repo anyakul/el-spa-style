@@ -211,7 +211,10 @@ body {
 .menu__item {
   text-align: center;
   position: relative;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  text-decoration: none; }
+  .menu__item:hover {
+    text-decoration: underline; }
   .menu__item a {
     color: #ffffff;
     list-style: none;
@@ -1276,6 +1279,11 @@ body {
   font-size: 14px;
   line-height: 18px;
   font-family: "Roboto-light", "Arial", sans-serif; }
+  .question__text a {
+    color: #ffffff;
+    text-decoration: none; }
+    .question__text a:hover {
+      text-decoration: underline; }
 
 .footer {
   background-color: #f0f0f0;
@@ -1308,6 +1316,11 @@ body {
   line-height: 25px;
   color: #606060;
   text-decoration: none; }
+
+.footer__privacy {
+  text-decoration: none; }
+  .footer__privacy:hover {
+    text-decoration: underline; }
 
 .footer__menu-header {
   font-size: 18px;

@@ -92,4 +92,13 @@
 
 .question__text {
   @include form-text;
+
+  a {
+    color: $white-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

@@ -26,7 +26,7 @@
   font-family: roboto-light;
   line-height: 45px;
   margin-bottom: 10px;
-  
+
   span {
     color: $blue-color;
   }
@@ -54,7 +54,7 @@
 @mixin item-header {
   font-size: 18px;
   line-height: 22px;
-  
+
   span {
     font-family: $roboto-bold;
   }
@@ -88,7 +88,7 @@
   background-color: $blue-color;
   text-decoration: none;
   border: none;
-  
+
   svg {
     color: $white-color;
   }
@@ -138,5 +138,13 @@
     z-index: 3;
     background: rgba(0, 0, 0, 0.45);
     transition: all 0.5s ease-out;
+  }
+}
+
+@mixin link {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
   }
 }
