@@ -64,6 +64,7 @@
   position: relative;
 
   &--size {
+    @include flex-row;
     margin-bottom: 45px;
   }
 }
@@ -91,6 +92,13 @@
       border: 1px solid $grey-color-form;
     }
   }
+
+  &--size {
+    width: 55%;
+    display: block;
+    margin-bottom: 0;
+    text-align: right;
+  }
 }
 
 .your-project__form-group-item-radio:checked + label::after {
@@ -114,10 +122,15 @@
   &:active {
     outline: none;
   }
+
+  &--size {
+    display: block;
+    width: 70%;
+  }
 }
 
 .your-project__form-image-wrapper {
-  min-width: 45%;
+  min-width: 41%;
   padding-top: 35px;
 }
 
