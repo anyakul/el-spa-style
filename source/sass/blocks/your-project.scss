@@ -81,6 +81,8 @@
   }
 
   &--radio {
+    cursor: pointer;
+
     &::before {
       content: "";
       width: 7px;

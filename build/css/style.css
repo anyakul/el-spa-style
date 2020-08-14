@@ -762,15 +762,17 @@ body {
   text-transform: uppercase; }
   .your-project__form-group-item-label span {
     text-transform: lowercase; }
-  .your-project__form-group-item-label--radio::before {
-    content: "";
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    position: absolute;
-    top: 5px;
-    left: -18px;
-    border: 1px solid #c4c4c4; }
+  .your-project__form-group-item-label--radio {
+    cursor: pointer; }
+    .your-project__form-group-item-label--radio::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      position: absolute;
+      top: 5px;
+      left: -18px;
+      border: 1px solid #c4c4c4; }
   .your-project__form-group-item-label--size {
     width: 55%;
     display: block;
