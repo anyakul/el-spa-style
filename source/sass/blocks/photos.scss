@@ -18,7 +18,8 @@
   box-sizing: border-box;
 
   .photos__item-link {
-    display: none;
+    opacity: 0;
+    transition: $picture-transition;
   }
 
   &:hover {
@@ -28,7 +29,7 @@
     }
 
     .photos__item-link {
-      display: block;
+      opacity: 1;
     }
 
     a {
