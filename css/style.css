@@ -131,7 +131,7 @@ body {
 
 .header__contacts-wrapper {
   width: 85%;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -158,7 +158,7 @@ body {
 
 .header__logo-menu-promo {
   width: 85%;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto; }
 
 .header__logo-menu {
@@ -306,7 +306,7 @@ body {
 
 .advantages__wrapper {
   width: 85%;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto; }
 
 .advantages__line {
@@ -438,7 +438,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style: none;
-  max-width: 1500px;
+  max-width: 1400px;
   margin: auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
@@ -507,7 +507,7 @@ body {
 
 .services__wrapper {
   width: 85%;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto; }
 
 .services__header {
@@ -588,8 +588,8 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-left: -8%;
-    width: 57%; }
+    margin-left: -9%;
+    width: 58%; }
     .services__item--button a {
       color: #ffffff;
       font-size: 24px;
@@ -654,7 +654,7 @@ body {
 
 .your-project__wrapper {
   width: 85%;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto; }
 
 .your-project__header {
@@ -863,7 +863,7 @@ body {
 
 .our-work__wrapper {
   width: 85%;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto; }
 
 .our-work__header {
@@ -901,7 +901,7 @@ body {
   line-height: 25px;
   font-weight: 200;
   width: 85%;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto;
   text-align: center; }
 
@@ -910,7 +910,7 @@ body {
 
 .choose__wrapper {
   width: 85%;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto; }
 
 .choose__header {
@@ -999,7 +999,7 @@ body {
 
 .equipment__wrapper {
   width: 85%;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto; }
 
 .equipment__header {
@@ -1083,8 +1083,8 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-right: -8%;
-    width: 57%; }
+    margin-right: -9%;
+    width: 58%; }
     .equipment__item--button a {
       color: #ffffff;
       font-size: 24px;
@@ -1150,13 +1150,13 @@ body {
 
 .companies__wrapper {
   width: 85%;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto; }
 
 .companies__list {
   list-style: none;
   width: 85%;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1189,7 +1189,7 @@ body {
 
 .question__container {
   width: 85%;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto; }
 
 .question__header,
@@ -1318,7 +1318,7 @@ body {
 
 .footer__wrapper {
   width: 85%;
-  max-width: 1400px;
+  max-width: 1300px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
