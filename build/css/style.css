@@ -130,8 +130,8 @@ body {
           align-items: center; }
 
 .header__contacts-wrapper {
-  width: 85%;
   max-width: 1300px;
+  width: 85%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,8 +157,8 @@ body {
   background-color: rgba(0, 0, 0, 0.2); }
 
 .header__logo-menu-promo {
-  width: 85%;
   max-width: 1300px;
+  width: 85%;
   margin: 0 auto; }
 
 .header__logo-menu {
@@ -305,8 +305,8 @@ body {
   margin-bottom: 90px; }
 
 .advantages__wrapper {
-  width: 85%;
   max-width: 1300px;
+  width: 85%;
   margin: 0 auto; }
 
 .advantages__line {
@@ -506,8 +506,8 @@ body {
   margin-bottom: 90px; }
 
 .services__wrapper {
-  width: 85%;
   max-width: 1300px;
+  width: 85%;
   margin: 0 auto; }
 
 .services__header {
@@ -653,8 +653,8 @@ body {
   margin-bottom: 90px; }
 
 .your-project__wrapper {
-  width: 85%;
   max-width: 1300px;
+  width: 85%;
   margin: 0 auto; }
 
 .your-project__header {
@@ -863,8 +863,8 @@ body {
   margin-bottom: 90px; }
 
 .our-work__wrapper {
-  width: 85%;
   max-width: 1300px;
+  width: 85%;
   margin: 0 auto; }
 
 .our-work__header {
@@ -901,8 +901,8 @@ body {
   font-size: 16px;
   line-height: 25px;
   font-weight: 200;
-  width: 85%;
   max-width: 1300px;
+  width: 85%;
   margin: 0 auto;
   text-align: center; }
 
@@ -910,8 +910,8 @@ body {
   margin-bottom: 90px; }
 
 .choose__wrapper {
-  width: 85%;
   max-width: 1300px;
+  width: 85%;
   margin: 0 auto; }
 
 .choose__header {
@@ -999,8 +999,8 @@ body {
   margin-bottom: 90px; }
 
 .equipment__wrapper {
-  width: 85%;
   max-width: 1300px;
+  width: 85%;
   margin: 0 auto; }
 
 .equipment__header {
@@ -1150,14 +1150,14 @@ body {
   margin-bottom: 90px; }
 
 .companies__wrapper {
-  width: 85%;
   max-width: 1300px;
+  width: 85%;
   margin: 0 auto; }
 
 .companies__list {
   list-style: none;
-  width: 85%;
   max-width: 1300px;
+  width: 85%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1189,8 +1189,8 @@ body {
   padding-bottom: 40px; }
 
 .question__container {
-  width: 85%;
   max-width: 1300px;
+  width: 85%;
   margin: 0 auto; }
 
 .question__header,
@@ -1318,8 +1318,8 @@ body {
   padding-bottom: 60px; }
 
 .footer__wrapper {
-  width: 85%;
   max-width: 1300px;
+  width: 85%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;

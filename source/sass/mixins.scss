@@ -1,6 +1,7 @@
 @mixin page-width {
-  width: 85%;
   max-width: 1300px;
+  width: 85%;
+
   margin: 0 auto;
 }
 
