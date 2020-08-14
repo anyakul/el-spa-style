@@ -25,74 +25,76 @@
 
 .equipment__item {
   position: relative;
-    overflow: hidden;
+  overflow: hidden;
   margin-bottom: 20px;
   width: 49%;
-  
+
   a {
     @include dark-element;
     display: block;
     height: 100%;
     width: 100%;
   }
+
   .equipment__item-image {
-      width: 100%;
-      display: block;
+    width: 100%;
+    display: block;
     overflow: hidden;
-      transition: all 0.5s ease;
+    transition: $picture-transition;
+  }
+
+  &:hover {
+    .equipment__item-image {
+      transform: $picture-transform;
     }
-        
-    &:hover {
-      .equipment__item-image {      
-        transform: scale(1.22);
-      }
-    }
-  
-  
+  }
+
   &:nth-child(2n-1) {
-  margin-top: -14%;
-  .services__item-text {
-    @include text-in-photo;
-    bottom: 36%;
+    margin-top: -14%;
+
+    .services__item-text {
+      @include text-in-photo;
+      bottom: 36%;
+    }
   }
-  }
-  
+
   &--button {
-      margin-right: -8%;
-  width: 57%;
-  @include flex-row;
-    a {
-    @include blue-button;
     @include flex-row;
-  justify-content: space-between;
+    margin-right: -8%;
+    width: 57%;
+
+    a {
+      @include blue-button;
+      @include flex-row;
+      justify-content: space-between;
       padding: 55px 140px 55px 55px;
-      
       width: 100%;
-    &:hover {
-    svg {
-        transform: translate3d(40px, 0, 40px);
-        transition: transform .2s ease-in-out;
+
+      &:hover {
+        svg {
+          transform: translate3d(40px, 0, 40px);
+          transition: $picture-transition;
+        }
       }
     }
-    }
   }
-  
+
   &:first-child,
   &:last-child {
     margin-top: auto;
+
     a {
-      &:before {
+      &::before {
         display: none;
       }
     }
   }
-  
-  &:first-child  {
+
+  &:first-child {
     margin-top: 0;
-  width: 50%;
+    width: 50%;
   }
 }
-
 
 .equipment__item-image {
   width: 100%;
@@ -100,10 +102,10 @@
 
 .equipment__item-text {
   @include text-in-photo;
-    z-index: 20;
-    color: $white-color;
-    width: 51%;
-    padding-left: 25px;
+  z-index: 20;
+  color: $white-color;
+  width: 51%;
+  padding-left: 25px;
 }
 
 .equipment__item-header {

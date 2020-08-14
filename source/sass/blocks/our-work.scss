@@ -20,14 +20,12 @@
   @include flex-row;
 }
 
-
 .our-work__item-image {
   margin: 0 auto;
 }
 
-
 .our-work__item {
   @include list-item-with-svg;
-  text-align: center;
   @include page-width;
+  text-align: center;
 }

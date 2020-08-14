@@ -8,7 +8,7 @@
 
 .companies__list {
   @include cancel-list;
+  @include page-width;
   @include flex-row-space-wrap;
   align-items: center;
-  @include page-width;
 }

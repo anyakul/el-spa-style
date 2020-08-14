@@ -7,8 +7,8 @@
 }
 
 .advantages__line {
-  width: 95%;
   @include flex-row;
+  width: 95%;
   space-between: justify-content;
   margin: auto;
   margin-bottom: 110px;
@@ -23,7 +23,6 @@
   text-align: center;
   text-transform: uppercase;
   margin-right: 50px;
-  
 }
 
 .advantages__experience-number {
@@ -35,38 +34,37 @@
 .advantages__experience-word-years {
   font-size: 43px;
   line-height: 35px;
-  font-family: $roboto-light;
+  font-weight: 200;
   margin-bottom: 15px;
 }
 
 .advantages__experience-word {
   font-size: 20px;
   line-height: 35px;
-  font-family: $roboto-light;
+  font-weight: 200;
   background-color: $dark-blue-color;
 }
 
 .advantages__header {
   font-size: 42px;
   line-height: 55px;
-  font-family: $roboto-light;
   font-weight: 300;
   margin-right: 55px;
   max-width: 50%;
   text-transform: uppercase;
   padding-top: 30px;
-  
+
   span {
     margin-left: 45px;
-    
+
     &:nth-child(2) {
       margin-left: 50px;
     }
-    
+
     &:nth-child(3) {
       margin-left: 100px;
     }
-    
+
     &:nth-child(4) {
       margin-left: 150px;
     }
@@ -74,7 +72,7 @@
 }
 
 .advantages__text {
-  font-family: roboto-thin;
+  font-weight: 200;
   padding-top: 30px;
   width: 40%;
   font-size: 16px;
@@ -96,8 +94,8 @@
   margin-right: 120px;
   position: relative;
   z-index: 20;
-  
-  &:after {
+
+  &::after {
     content: "";
     position: absolute;
     background-color: $light-main-grey-color;
@@ -113,7 +111,7 @@
   font-size: 65px;
   line-height: 76px;
   color: $blue-color;
-  font-family: $roboto-bold;
+  font-weight: 600;
 }
 
 .advantages__item-text {
@@ -121,5 +119,5 @@
   line-height: 21px;
   text-transform: lowercase;
   padding-left: 30px;
-  font-family: $roboto-light;
+  font-weight: 300;
 }

@@ -26,66 +26,68 @@
 
 .services__item {
   position: relative;
-    overflow: hidden;
+  overflow: hidden;
   margin-bottom: 20px;
   width: 49%;
-  
+
   a {
-    display: block;
     @include dark-element;
+    display: block;
     height: 100%;
     width: 100%;
     cursor: pointer;
   }
+
   .services__item-image {
-      width: 100%;
-      display: block;
+    width: 100%;
+    display: block;
     overflow: hidden;
-      transition: all 0.5s ease;
+    transition: $picture-transition;
+  }
+
+  &:hover {
+    .services__item-image {
+      transform: $picture-transform;
     }
-        
-    &:hover {
-      .services__item-image {      
-        transform: scale(1.22);
-      }
-    }
-  
-  
+  }
+
   &:nth-child(2n-1) {
-  margin-top: -14%;
+    margin-top: -14%;
   }
-  
+
   &--button {
-      margin-left: -8%;
-  width: 57%;
-  @include flex-row;
-    a {
-    @include blue-button;
     @include flex-row;
-  justify-content: space-between;
+    margin-left: -8%;
+    width: 57%;
+
+    a {
+      @include blue-button;
+      @include flex-row;
+      justify-content: space-between;
       padding: 55px 55px 55px 140px;
-      
       width: 100%;
-    &:hover {
-    svg {
-        transition: transform .2s ease-out;
-        transform: translate3d(-40px, 0, -40px);
+
+      &:hover {
+        svg {
+          transition: $picture-transition;
+          transform: translate3d(-40px, 0, -40px);
+        }
       }
     }
-    }
   }
-  
+
   &:first-child,
-  &:last-child a  {
-    &:before {
+  &:last-child a {
+    &::before {
       display: none;
     }
   }
-  
-  &:first-child  {
+
+  &:first-child {
     margin-top: 0;
   }
-  &:last-child  {
+
+  &:last-child {
     margin-top: -150px;
   }
 }
@@ -96,10 +98,10 @@
 
 .services__item-text {
   @include text-in-photo;
-    z-index: 20;
-    color: $white-color;
-    width: 51%;
-    padding-left: 25px;
+  z-index: 20;
+  color: $white-color;
+  width: 51%;
+  padding-left: 25px;
 }
 
 .services__item-header {

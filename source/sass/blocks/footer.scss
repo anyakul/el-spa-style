@@ -37,6 +37,7 @@
 .footer__menu-item {
   @include cancel-list;
   margin-bottom: 5px;
+
   a {
     @include footer-link;
     @include link;
@@ -46,7 +47,6 @@
     color: $blue-color;
     margin-left: auto;
   }
-
 
   &--social {
     text-align: right;

@@ -23,7 +23,7 @@
 
 @mixin section-header {
   font-size: 38px;
-  font-family: roboto-light;
+  font-weight: 300;
   line-height: 45px;
   margin-bottom: 10px;
 
@@ -41,14 +41,13 @@
   font-size: 16px;
   line-height: 19px;
   text-align: center;
-  font-family: roboto-thin;
+  font-weight: 200;
 }
-
 
 @mixin section-text {
   font-size: 18px;
   line-height: 22px;
-  font-family: $roboto-thin;
+  font-weight: 200;
 }
 
 @mixin item-header {
@@ -56,7 +55,7 @@
   line-height: 22px;
 
   span {
-    font-family: $roboto-bold;
+    font-weight: 600;
   }
 }
 
@@ -106,13 +105,13 @@
 @mixin form-text {
   font-size: 14px;
   line-height: 18px;
-  font-family: $roboto-light;
+  font-weight: 200;
 }
 
 @mixin list-item-with-svg {
   font-size: 16px;
   line-height: 25px;
-  font-family: $roboto-light;
+  font-weight: 200;
 }
 
 @mixin footer-link {
@@ -128,7 +127,8 @@
 
 @mixin dark-element {
   position: relative;
-  &:before {
+
+  &::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -146,5 +146,13 @@
 
   &:hover {
     text-decoration: underline;
+  }
+}
+
+@mixin picture-animation {
+  transition: $picture-transition;
+
+  &:hover {
+    transform: $picture-transform;
   }
 }

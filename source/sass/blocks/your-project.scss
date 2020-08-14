@@ -20,13 +20,9 @@
   align-items: flex-start;
 }
 
-.your-project__form {
-  @include flex-row;
-}
-
 .your-project__form-left {
-  width: 55%;
   @include flex-row;
+  width: 55%;
   flex-wrap: wrap;
 }
 
@@ -42,15 +38,12 @@
   margin-bottom: 40px;
 
   &--size {
-     .your-project__form-group-list {
-       padding-left: 0;
-     }
-  }
+    width: 50%;
 
-  &--size {
-     width: 50%;
+    .your-project__form-group-list {
+      padding-left: 0;
+    }
   }
-
 }
 
 .your-project__form-group-legend {
@@ -71,10 +64,21 @@
   position: relative;
 
   &--size {
-     margin-bottom: 45px;
+    margin-bottom: 45px;
   }
 }
+
 .your-project__form-group-item-label {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+
+  span {
+    text-transform: lowercase;
+  }
+
   &--radio {
     &::before {
       content: "";
@@ -89,8 +93,6 @@
   }
 }
 
-
-
 .your-project__form-group-item-radio:checked + label::after {
   content: "";
   position: absolute;
@@ -103,26 +105,13 @@
   border: 1px solid $blue-color;
 }
 
-
-.your-project__form-group-item-label {
-  font-size: 14px;
-  line-height: 18px;
-  font-family: $roboto-light;
-  margin-bottom: 35px;
-  text-transform: uppercase;
-
-  span {
-    text-transform: lowercase;
-  }
-}
-
 .your-project__form-group-item-input {
   border: none;
   border-bottom: 1px solid $grey-color-form;
 
   &:hover,
-&:focus,
-&:active  {
+  &:focus,
+  &:active {
     outline: none;
   }
 }
@@ -144,9 +133,6 @@
   }
 }
 
-.your-project__form-image {
-}
-
 .your-project__form-price-text {
   @include form-group-text;
   margin-bottom: 15px;
@@ -163,7 +149,7 @@
   input {
     @include form-text;
     width: 100%;
-  padding-left: 5px;
+    padding-left: 5px;
     border: none;
     border-bottom: 1px solid $grey-color-form;
 
@@ -182,7 +168,7 @@
   margin-bottom: 30px;
 
   a {
-    font-family: $roboto-bold;
+    font-weight: 600;
     color: $black-color;
   }
 }
