@@ -18,8 +18,13 @@
 
 body {
   font-family: $roboto;
+  overflow-x: hidden;
 }
 
 .row {
   margin: 0;
+}
+
+.sprite {
+  display: none;
 }
